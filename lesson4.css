@@ -1,0 +1,75 @@
+/*
+父子选择器/派生选择器
+*/
+/*自右向左遍历*/
+
+
+/*
+直接子元素选择器
+*/
+
+/*div > em {
+
+	background-color: red;
+}*/
+
+
+
+/*section div ul li a em {
+
+	background-color: red;
+}
+*/
+
+
+/*并列选择器*/
+/*div.demo {
+	background-color: red;
+}*/
+
+
+/*分组选择器*/
+/*em, 
+strong, 
+span{
+	background-color: red;
+}*/
+
+
+
+/*默认16像素*/
+/*font-size 字体大小 (高)*/
+/*font-weight 加粗*/
+/*font-italic 斜体*/
+/*font-family 字体*/
+/*color 字体颜色*/
+
+div {
+	font-size:16px;
+	font-weight:bold;/* lighter normal bold bolder 100 200 300 -- 900*/
+	font-style:italic;
+	font-family:cursive;
+	color:rgb(0,255,255);
+	border:1px solid black;
+	/*border: border-width border-style border-color;*/
+	border-width:2px;
+	border-style:dashed;
+}
+
+
+
+/*r     g     b
+
+00-ff
+
+#000000
+*/
+
+
+
+
+/*
+1.(纯英文单词)
+2.(颜色代码)
+3.(颜色函数)
+*/

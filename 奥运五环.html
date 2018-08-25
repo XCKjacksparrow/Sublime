@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.plat{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-left: -350px;
+			margin-top: -160px;
+
+		}
+
+
+		.circle1,
+		.circle2,
+		.circle3,
+		.circle4,
+		.circle5{
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			border: 10px solid black;
+			border-radius: 50%;
+		}
+
+		.circle1{
+			border-color: red;
+			top: 0;
+			left: 0;
+		}
+		.circle2{
+			top: 0;
+			left: 240px;
+			z-index: 3;
+		}
+		.circle3{
+			border-color: green;
+			top: 0;
+			left: 480px;
+		}
+		.circle4{
+			border-color: yellow;
+			top: 100px;
+			left: 110px;
+		}
+		.circle5{
+			border-color: purple;
+			top: 100px;
+			left: 350px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="plat">
+		
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+		<div class="circle3"></div>
+		<div class="circle4"></div>
+		<div class="circle5"></div>
+
+	</div>
+
+
+</body>
+</html>

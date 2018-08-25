@@ -84,11 +84,18 @@
 
 */
 
+/*
+position:absolute; float:left/right
+内部转化成inline-block;
+*/
+
 /* 	float*/
-		*{
+		/**{
 			margin: 0;
 			padding: 0;
-		}
+		}*/
+
+/*
 
 		.wrapper{
 			border: 1px solid black;
@@ -100,11 +107,12 @@
 			height: 100px;
 			background-color: black;
 		}
-		p{
-			border-top: 0 solid red;
+		.wrapper::after{
+			content:"";
+			display: block;
 			clear: both;
 		}
-
+		*/
 
 
 
@@ -124,8 +132,69 @@
 */
 
 
+/*
+！important
+行间样式
+id
+class|属性|伪类
+标签|伪元素
+通配符*/
 
 
+
+
+
+/*伪元素*/
+/*
+span::before{
+	content:"XCK";
+}
+
+span::after{
+	content:"xia";
+}*/
+
+
+*{
+	color: #424242;
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+.nav{
+	list-style: none;
+}
+
+.nav::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+
+.nav .list-item{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px;
+}
+
+.nav .list-item a{
+	padding: 0 5px;
+	display: inline-block;
+	text-decoration: none;
+	color: #f40;
+	font-weight: bold;
+	height: 30px;
+}
+
+
+.nav .list-item a:hover{
+	background-color: #f40;
+	color: #fff;
+	border-radius: 15px;
+}
 
 
 

@@ -44,6 +44,52 @@
 
 	</style>
  -->
+ 	<!-- <style type="text/css">
+ 		*{
+ 			margin: 0;
+ 			padding: 0;
+ 		}
+ 		.wrapper{
+ 			position: absolute;
+ 			margin-left: 100px;
+ 			margin-top: 100px;
+ 			width: 100px;
+ 			height: 100px;
+ 			background-color: black;
+ 		}
+ 		.content{
+ 			margin-left: 50px;
+ 			margin-top: 150px;
+ 			width: 50px;
+ 			height: 50px;
+ 			background-color: red;
+ 		}
+ 	</style> -->
+
+ 	<!-- <style type="text/css">
+ 		*{
+ 			margin: 0;
+ 			padding: 0;
+ 		}
+ 		.box1{
+ 			margin-right: 100px;
+ 			background-color: red;
+ 		}
+ 		.box2{
+ 			margin-left: 100px;
+ 			background-color: green;
+ 		}
+ 		.demo1{
+ 			margin-bottom: 200px;
+ 			background-color: red;
+ 		}
+ 		.demo2{
+ 			margin-top: 200px;
+ 			background-color: green;
+ 		}
+
+ 	</style> -->
+
 
 </head>
 <body>
@@ -56,6 +102,32 @@
 	 <div class="left"></div>
  -->
 
+ 	<!-- margin塌陷 --> 	
+ 	<!-- bfc block format context
+			块级		格式化	上下文
+		如果触发盒子的bfc
+	1、position：absolute
+	2、display：inline-block
+	3、float： left/right
+	4、overflow：hidden  //溢出部分隐藏
+
+
+ 	-->
+<!-- 
+ 	<div class="wrapper">
+ 		<div class="content"></div>
+ 	</div> -->
+
+
+ 	<!-- margin合并 --> <!-- //不解决
+ 	<span class="box1">123</span>
+ 	<span class="box2">456</span>
+ 	<div class="demo1">1</div>
+ 	<div class="warpper" style="overflow: hidden;">
+ 		<div class="demo2">2</div>
+ 	</div>
+ 	
+ -->
 	
 </body>
 </html>

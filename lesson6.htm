@@ -3,93 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Document</title>
-
-	<!-- <style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		.class1{
-			position: absolute;
-			right: 0;
-			width: 100px;
-			height: 100px;
-			background-color: red;
-			opacity: 1;
-		}
-		.class2{
-			margin-right: 100px;
-			height: 100px;
-			background-color: green;
-		}
-
-	</style> -->
-	<!-- <style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		.right{
-			position: absolute;
-			right: 0;
-			width: 100px;
-			height: 100px;
-			background-color: #fcc;
-		}
-		.left{
-			margin-right: 100px;
-			height: 100px;
-			background-color: #ffc;
-		}
-
-	</style>
- -->
- 	<!-- <style type="text/css">
- 		*{
- 			margin: 0;
- 			padding: 0;
- 		}
- 		.wrapper{
- 			position: absolute;
- 			margin-left: 100px;
- 			margin-top: 100px;
- 			width: 100px;
- 			height: 100px;
- 			background-color: black;
- 		}
- 		.content{
- 			margin-left: 50px;
- 			margin-top: 150px;
- 			width: 50px;
- 			height: 50px;
- 			background-color: red;
- 		}
- 	</style> -->
-
- 	<!-- <style type="text/css">
- 		*{
- 			margin: 0;
- 			padding: 0;
- 		}
- 		.box1{
- 			margin-right: 100px;
- 			background-color: red;
- 		}
- 		.box2{
- 			margin-left: 100px;
- 			background-color: green;
- 		}
- 		.demo1{
- 			margin-bottom: 200px;
- 			background-color: red;
- 		}
- 		.demo2{
- 			margin-top: 200px;
- 			background-color: green;
- 		}
-
- 	</style> -->
-
+	<link rel="stylesheet" type="text/css" href="lesson6.css">
 
 </head>
 <body>
@@ -126,8 +40,35 @@
  	<div class="warpper" style="overflow: hidden;">
  		<div class="demo2">2</div>
  	</div>
- 	
  -->
+
+
+ 	<!-- float 
+		float:left/right;
+ 	-->
+
+ 	<div class="wrapper">
+ 		<div class="content">1</div>
+ 		<div class="content">2</div>
+ 		<div class="content">3</div>
+ 		<p></p>
+ 		<!-- 父级包住浮动的子级 -->
+ 	</div>
+
+ 	<!-- 
+ 	1、浮动元素产生的浮动流 
+	所有产生了浮动流的元素，块级元素看不到他们，
+	产生了bfc的元素和文本类属性(inline)的元素以及文本都能看到浮动元素
+
+ -->
+<!-- 
+
+ 	<div class="box"></div>
+ 	<img src="">
+
+ -->
+
+
 	
 </body>
 </html>
